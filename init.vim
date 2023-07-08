@@ -52,6 +52,7 @@ let g:airline_theme='deep_space'
 
 " Coc autocompletion
 
+inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
 " Tagbar 
 
