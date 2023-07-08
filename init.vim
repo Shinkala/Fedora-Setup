@@ -81,7 +81,7 @@ let g:UltiSnipsSnippetDirectories = ["~/.config/nvim/UltiSnips"]
 
 " Make sure to have python3 package for nvim, if not, do pip install neovim
 
-" Nvim Plugin
+" Neovim Plugin
 
 call plug#begin()
 
