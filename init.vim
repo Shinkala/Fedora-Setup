@@ -52,7 +52,8 @@ let g:airline_theme='deep_space'
 
 " Coc autocompletion
 
-inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"                        
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Tagbar 
 
@@ -72,8 +73,8 @@ let g:vimtex_compiler_method='latexmk'
 
 " UltiSnips setup
 
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsExpandTrigger = "²"
+let g:UltiSnipsJumpForwardTrigger = '²'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsEnableSnipMate = 1
 let g:UltiSnipsSnippetsDir="~/.config/nvim/UltiSnips"
@@ -81,7 +82,7 @@ let g:UltiSnipsSnippetDirectories = ["~/.config/nvim/UltiSnips"]
 
 " Make sure to have python3 package for nvim, if not, do pip install neovim
 
-" Neovim Plugin
+" Nvim Plugin
 
 call plug#begin()
 
@@ -90,7 +91,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
@@ -98,7 +98,8 @@ Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/lervag/vimtex'
-Plug 'https://github.com/SirVer/ultisnips'
+Plug 'https://github.com/neoclide/coc.nvim'
+Plug 'https://github.com/SirVer/ultisnips/'
 
 set encoding=UTF-8
 
